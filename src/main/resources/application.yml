@@ -3,5 +3,18 @@ server:
 spring:
   application:
     name: simulator-service
+  main:
+    allow-bean-definition-overriding: true
+  rabbitmq:
+    host: localhost
+    password: guest
+    port: 5672
+    username: guest
+
+spital:
+  rabbitmq:
+    exchange: spital.exchange
+    queue: spital.consultqueue
+    routingkey: spital.routingkey
 
 

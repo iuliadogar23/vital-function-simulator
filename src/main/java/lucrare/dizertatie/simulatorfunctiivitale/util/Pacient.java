@@ -20,11 +20,12 @@ public class Pacient {
         return id;
     }
 
-    public static String addPacientToNewsReport(String newsReport) {
+    public static String addPacientToNewsReport(String newsReport, Integer pacientId) {
         StringBuilder stringBuilder = new StringBuilder();
 
         stringBuilder.append("\n")
-                .append("pacientId : "+pacientInstance.getId())
+                .append("pacientId : ")
+                .append(pacientId)
                 .append("\n")
                 .append(newsReport);
         return stringBuilder.toString();

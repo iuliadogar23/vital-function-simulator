@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import java.text.DecimalFormat;
 
 @Service
-public class SimulatorService {
+public class SimulatorService{
 
     private final String NEWLINE= "\n";
     private final String SETG = "SETG ";
@@ -88,5 +88,6 @@ public class SimulatorService {
         decimalFormat.setMaximumFractionDigits(1);
         return decimalFormat.format(value);
     }
+
 
 }
